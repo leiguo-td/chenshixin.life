@@ -264,7 +264,7 @@ body {
 }
 
 .timeline-item div:nth-child(2) {
-    color: var(--clr-textColor);
+    color: color-mix(in srgb, var(--clr-textColor), transparent 30%);
     font-weight: 300;
     margin-bottom: 15px;
 }
