@@ -278,7 +278,7 @@ body {
 .github-chart img {
     width: 100%;
     max-width: 600px;
-    height: 150px;
+    height: auto;
     display: block;
     /* Prevent layout shift */
     aspect-ratio: 4 / 1;
