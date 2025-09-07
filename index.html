@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memorial page for Chen Shixin - A dedicated software engineer, colleague and friend. Remembering his legacy and contributions.">
     <title>Memorial Page of Chen Shixin - In Loving Memory</title>
+    
+    <!-- Resource hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Critical image preloads -->
     <link rel="preload" as="image" href="images/candle.webp" type="image/webp">
     <link rel="preload" as="image" href="images/candle.png" type="image/png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" as="image" href="photos/chen0.png" type="image/png">
+    
+    <!-- Critical CSS inline -->
+    <style>
+        :root {
+            --clr-backgroundColor: #1a1a1a;
+            --clr-textColor: rgb(255, 255, 255);
+            --clr-accent: rgb(252, 187, 104);
+            --clr-border: #3a3a3a;
+            --clr-greysat: color-mix(in srgb, color-mix(in srgb, var(--clr-accent), hsl(0deg 0% 70%) 35%), black 40%);
+            --ft-accent: 'Juana', serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--ft-accent);
+            font-weight: 300;
+            line-height: 1.6;
+            color: var(--clr-textColor);
+            background-color: var(--clr-backgroundColor);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--clr-backgroundColor);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: var(--clr-backgroundColor);
+            background-image: url('images/candle.webp'), url('images/candle.png');
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            padding: 5px 40px;
+            text-align: left;
+            position: relative;
+            border-bottom: 1px solid var(--clr-border);
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(26, 26, 26, 0.7);
+            z-index: 1;
+        }
+        
+        .header > * {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .name {
+            font-size: 3rem;
+            font-weight: 200;
+            margin-bottom: 0px;
+            letter-spacing: 1px;
+            font-family: 'Juana';
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.7;
+            max-width: 600px;
+            margin: 0;
+            text-align: left;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 </head>
 <body>
     <div class="container">
@@ -99,40 +188,40 @@
                 <h2 class="section-title">Memories</h2>
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="photos/chen1.jpg" alt="Memory 1" />
+                        <img src="photos/chen1.webp" loading="lazy" decoding="async" alt="Memory 1" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen2.jpg" alt="Memory 2" />
+                        <img src="photos/chen2.webp" loading="lazy" decoding="async" alt="Memory 2" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen3.jpg" alt="Memory 3" />
+                        <img src="photos/chen3.webp" loading="lazy" decoding="async" alt="Memory 3" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen4.jpg" alt="Memory 4" />
+                        <img src="photos/chen4.webp" loading="lazy" decoding="async" alt="Memory 4" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen5.jpg" alt="Memory 5" />
+                        <img src="photos/chen5.webp" loading="lazy" decoding="async" alt="Memory 5" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen6.jpg" alt="Memory 6" />
+                        <img src="photos/chen6.webp" loading="lazy" decoding="async" alt="Memory 6" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen7.jpg" alt="Memory 7" />
+                        <img src="photos/chen7.webp" loading="lazy" decoding="async" alt="Memory 7" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen8.jpg" alt="Memory 8" />
+                        <img src="photos/chen8.webp" loading="lazy" decoding="async" alt="Memory 8" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen9.jpg" alt="Memory 9" />
+                        <img src="photos/chen9.webp" loading="lazy" decoding="async" alt="Memory 9" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen10.jpg" alt="Memory 10" />
+                        <img src="photos/chen10.webp" loading="lazy" decoding="async" alt="Memory 10" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen11.jpg" alt="Memory 11" />
+                        <img src="photos/chen11.webp" loading="lazy" decoding="async" alt="Memory 11" />
                     </div>
                     <div class="gallery-item">
-                        <img src="photos/chen12.jpg" alt="Memory 12" />
+                        <img src="photos/chen12.webp" loading="lazy" decoding="async" alt="Memory 12" />
                     </div>
                 </div>
             </section>
@@ -155,78 +244,7 @@
     </div>
 
     <script>
-        // Get modal elements
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeBtn = document.querySelector('.modal-close');
-        const prevBtn = document.querySelector('.modal-prev');
-        const nextBtn = document.querySelector('.modal-next');
-        
-        // Get all gallery images
-        const galleryImages = document.querySelectorAll('.gallery-item img');
-        let currentImageIndex = 0;
-
-        // Function to show image at specific index
-        function showImage(index) {
-            if (index >= 0 && index < galleryImages.length) {
-                currentImageIndex = index;
-                modalImg.src = galleryImages[index].src;
-                modalImg.alt = galleryImages[index].alt;
-            }
-        }
-
-        // Function to show next image
-        function showNext() {
-            const nextIndex = (currentImageIndex + 1) % galleryImages.length;
-            showImage(nextIndex);
-        }
-
-        // Function to show previous image
-        function showPrev() {
-            const prevIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-            showImage(prevIndex);
-        }
-
-        // Add click listeners to all gallery images
-        galleryImages.forEach((img, index) => {
-            img.addEventListener('click', function() {
-                modal.style.display = 'block';
-                showImage(index);
-            });
-        });
-
-        // Navigation button listeners
-        nextBtn.addEventListener('click', showNext);
-        prevBtn.addEventListener('click', showPrev);
-
-        // Close modal when clicking the X
-        closeBtn.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
-
-        // Close modal when clicking outside the image
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', function(e) {
-            if (modal.style.display === 'block') {
-                switch(e.key) {
-                    case 'Escape':
-                        modal.style.display = 'none';
-                        break;
-                    case 'ArrowLeft':
-                        showPrev();
-                        break;
-                    case 'ArrowRight':
-                        showNext();
-                        break;
-                }
-            }
-        });
+        const m=document.getElementById('imageModal'),i=document.getElementById('modalImage'),c=document.querySelector('.modal-close'),p=document.querySelector('.modal-prev'),n=document.querySelector('.modal-next'),g=document.querySelectorAll('.gallery-item img');let x=0;function s(a){a>=0&&a<g.length&&(x=a,i.src=g[a].src,i.alt=g[a].alt)}function next(){s((x+1)%g.length)}function prev(){s((x-1+g.length)%g.length)}g.forEach((img,idx)=>{img.addEventListener('click',()=>{m.style.display='block';s(idx)})});n.addEventListener('click',next);p.addEventListener('click',prev);c.addEventListener('click',()=>m.style.display='none');m.addEventListener('click',e=>e.target===m&&(m.style.display='none'));document.addEventListener('keydown',e=>{if(m.style.display==='block')switch(e.key){case 'Escape':m.style.display='none';break;case 'ArrowLeft':prev();break;case 'ArrowRight':next()}});
     </script>
 
 </body>
