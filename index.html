@@ -10,9 +10,27 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
     
-    <!-- Juana Font -->
-    <link href="https://db.onlinewebfonts.com/c/02ce6845d62b667c5c60bdaacdc77aa6?family=FSP+DEMO+-+Juana+Light" rel="stylesheet"> 
+    <!-- Juana Font - Non-blocking with font-display -->
+    <style>
+        @font-face {
+            font-family: 'FSP DEMO - Juana Light';
+            src: url('https://db.onlinewebfonts.com/t/02ce6845d62b667c5c60bdaacdc77aa6.woff2') format('woff2'),
+                 url('https://db.onlinewebfonts.com/t/02ce6845d62b667c5c60bdaacdc77aa6.woff') format('woff');
+            font-display: swap;
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        /* Fallback font adjustments to reduce layout shift */
+        @font-face {
+            font-family: 'JuanaFallback';
+            src: local('Times New Roman');
+            size-adjust: 108%;
+            font-display: block;
+        }
+    </style> 
     
     <!-- Critical image preloads for LCP optimization -->
     <link rel="preload" as="image" href="images/candle.webp" type="image/webp" fetchpriority="high">
@@ -27,7 +45,7 @@
             --clr-accent: rgb(252, 187, 104);
             --clr-border: #3a3a3a;
             --clr-greysat: color-mix(in srgb, color-mix(in srgb, var(--clr-accent), hsl(0deg 0% 70%) 35%), black 40%);
-            --ft-accent: 'FSP DEMO - Juana Light', Georgia, serif;
+            --ft-accent: 'FSP DEMO - Juana Light', 'JuanaFallback', Georgia, serif;
         }
         
         * {
@@ -84,7 +102,7 @@
             font-weight: 200;
             margin-bottom: 0px;
             letter-spacing: 1px;
-            font-family: 'FSP DEMO - Juana Light', Georgia, serif;
+            font-family: 'FSP DEMO - Juana Light', 'JuanaFallback', Georgia, serif;
         }
         
         .tagline {
