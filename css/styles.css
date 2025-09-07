@@ -33,7 +33,7 @@ body {
 
 .header {
     background: var(--clr-backgroundColor);
-    background-image: url('../images/candle.webp'), url('../images/candle.png');
+    background-image: url('../images/candle.webp');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
