@@ -121,7 +121,7 @@ body {
 .intro-section {
     text-align: center;
     padding: 30px 40px;
-    margin-top: 40px;
+    margin-top: 5px;
     border-top: 1px solid var(--clr-border);
 }
 
@@ -172,7 +172,7 @@ body {
     border: none;
     padding: 20px 0px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .quote-container {
@@ -312,6 +312,8 @@ body {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    /* Prevent layout shift by maintaining aspect ratio */
+    aspect-ratio: 1;
 }
 
 .gallery-item:hover img {
@@ -433,18 +435,19 @@ body {
     }
     
     .quote-section {
-        padding: 30px 20px;
+        padding: 20px 20px;
+        margin-bottom: 10px;
     }
 
     .quote-container {
         flex-direction: column;
-        gap: 25px;
+        gap: 15px;
         text-align: center;
     }
 
     .quote-photo img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .quote-mark {
