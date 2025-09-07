@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <!-- Font preload to prevent layout shift -->
-    <link rel="preload" href="https://fonts.gstatic.com/s/juana/v1/QldKNThJphYb8_g6c1WJcw.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Juana Font -->
+    <link href="https://db.onlinewebfonts.com/c/5ce9655f6b33e1aaa1c62de0397a79dc?family=Juana+Regular" rel="stylesheet">
     
-    <!-- Critical image preloads -->
-    <link rel="preload" as="image" href="images/candle.webp" type="image/webp">
-    <link rel="preload" as="image" href="photos/chen0.png" type="image/png">
+    <!-- Critical image preloads for LCP optimization -->
+    <link rel="preload" as="image" href="images/candle.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="photos/chen0.png" type="image/png" fetchpriority="high">
+    <link rel="preload" as="image" href="photos/github2025.png" type="image/png" fetchpriority="high">
     
     <!-- Critical CSS inline -->
     <style>
@@ -26,7 +27,7 @@
             --clr-accent: rgb(252, 187, 104);
             --clr-border: #3a3a3a;
             --clr-greysat: color-mix(in srgb, color-mix(in srgb, var(--clr-accent), hsl(0deg 0% 70%) 35%), black 40%);
-            --ft-accent: 'Juana', serif;
+            --ft-accent: 'Juana Regular', Georgia, serif;
         }
         
         * {
@@ -83,7 +84,7 @@
             font-weight: 200;
             margin-bottom: 0px;
             letter-spacing: 1px;
-            font-family: 'Juana';
+            font-family: 'Juana Regular', Georgia, serif;
         }
         
         .tagline {
@@ -119,7 +120,7 @@
             <section id="quote" class="section quote-section">
                 <div class="quote-container">
                     <div class="quote-photo">
-                        <img src="photos/chen0.png" width="240" height="240" alt="Chen Shixin" />
+                        <img src="photos/chen0.png" width="240" height="240" fetchpriority="high" alt="Chen Shixin" />
                     </div>
                     <div class="quote-content">
                         <div class="quote-mark">❝</div>
@@ -137,50 +138,50 @@
                         <div class="timeline-date">2025</div>
                         <div>Final contribution and a lasting legacy</div>
                         <div class="github-chart">
-                            <img src="photos/github2025.png" alt="GitHub contributions 2025" />
+                            <img src="photos/github2025.png" width="600" height="150" fetchpriority="high" alt="GitHub contributions 2025" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2024</div>
                         <div class="github-chart">
-                            <img src="photos/github2024.png" alt="GitHub contributions 2024" />
+                            <img src="photos/github2024.png" width="600" height="150" alt="GitHub contributions 2024" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2023</div>
                         <div class="github-chart">
-                            <img src="photos/github2023.png" alt="GitHub contributions 2023" />
+                            <img src="photos/github2023.png" width="600" height="150" alt="GitHub contributions 2023" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2022</div>
                         <div class="github-chart">
-                            <img src="photos/github2022.png" alt="GitHub contributions 2022" />
+                            <img src="photos/github2022.png" width="600" height="150" alt="GitHub contributions 2022" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2021</div>
                         <div class="github-chart">
-                            <img src="photos/github2021.png" alt="GitHub contributions 2021" />
+                            <img src="photos/github2021.png" width="600" height="150" alt="GitHub contributions 2021" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2020</div>
                         <div class="github-chart">
-                            <img src="photos/github2020.png" alt="GitHub contributions 2020" />
+                            <img src="photos/github2020.png" width="600" height="150" alt="GitHub contributions 2020" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2019</div>
                         <div class="github-chart">
-                            <img src="photos/github2019.png" alt="GitHub contributions 2019" />
+                            <img src="photos/github2019.png" width="600" height="150" alt="GitHub contributions 2019" />
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2018</div>
                         <div>Beginning of the journey</div>
                         <div class="github-chart">
-                            <img src="photos/github2018.png" alt="GitHub contributions 2018" />
+                            <img src="photos/github2018.png" width="600" height="150" alt="GitHub contributions 2018" />
                         </div>
                     </div>
                 </div>

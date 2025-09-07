@@ -5,7 +5,7 @@
     --clr-secondary: #2a2a2a;
     --clr-border: #3a3a3a;
     --clr-greysat: color-mix(in srgb, color-mix(in srgb, var(--clr-accent), hsl(0deg 0% 70%) 35%), black 40%);
-    --ft-accent: 'Juana', serif;
+    --ft-accent: 'Juana Regular', Georgia, serif;
     --ft-greysat: color-mix(in srgb, color-mix(in srgb, var(--ft-accent), hsl(0deg 0% 70%) 35%), black 40%);
 }
 
@@ -280,6 +280,9 @@ body {
     max-width: 600px;
     height: auto;
     display: block;
+    /* Prevent layout shift */
+    aspect-ratio: 4 / 1;
+    object-fit: contain;
 }
 
 .gallery {
